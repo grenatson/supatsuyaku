@@ -1,0 +1,91 @@
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+section p {
+    font-size: larger;
+}
+
+.description-with-me {
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description-with-me .text {
+    max-width: 900px;
+}
+
+.description-with-me img {
+    width: 150px;
+    height: fit-content;
+    margin: auto 20px;
+    border: 5px solid rgba(215, 222, 255, 0.5);
+}
+
+.description-with-logos {
+    margin: 0 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title, .logo {
+    transition-duration: 1s;
+}
+
+.title:hover, .title.highlighted {
+    color: rgb(242, 223, 255);
+    text-shadow:
+        2px 2px 2px rgb(88, 127, 186),
+        -2px -2px 2px rgb(88, 127, 186);
+}
+
+.row-of-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 160px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.logo:hover, .logo.highlighted {
+    background-color: rgba(88, 127, 186, 0.5);
+    box-shadow: 0 0 8px 2px rgba(88, 127, 186);
+}
+
+.logo img {
+    width: 140px;
+}
+
+.partnership {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.partnership h2 {
+    padding: 5px;
+    text-align: left;
+    width: 700px;
+}
+
+.contacts {
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: larger;
+}

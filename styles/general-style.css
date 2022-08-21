@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 0 150px 0;
+    background-color: #a4c2fd;
+
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+}
+
+nav a {
+    display: block;
+    padding: 25px;
+    margin-right: 0px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(27, 0, 68);
+
+    transition-duration: 0.5s;
+}
+
+nav a:hover:not(:first-child) {
+    background-color: #5880ba;
+}
+
+nav a.current {
+    background-color: rgba(215, 222, 255, 0.5);
+}
+
+nav a:first-child {
+    margin: auto 20px auto;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+nav a:first-child img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.contacts-header {
+    line-height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contacts-header p {
+    display: block;
+    width: max-content;
+}
+
+main {
+    margin: 25px 10% 25px;
+    padding: 25px;
+    background-color: #a4c2fd;
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #5880ba;
+}

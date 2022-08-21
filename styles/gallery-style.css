@@ -1,0 +1,283 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid rgb(215, 222, 255);
+    box-shadow: 0 0 2px 1px black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:
+        color 0.5s,
+        background-color 0.5s,
+        transform 1s;
+
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+}
+
+.slider-controls label:hover {
+    transform: scale(1.1);
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: rgb(88, 127, 186);
+    color: rgb(215, 222, 255);
+}
+
+.gallery {
+    position: relative;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#btn-1:checked ~ .gallery .panel:not(:nth-child(1)),
+#btn-2:checked ~ .gallery .panel:not(:nth-child(2)),
+#btn-3:checked ~ .gallery .panel:not(:nth-child(3)) {
+    display: none;
+}
+
+#btn-1:checked ~ .gallery .panel:nth-child(1),
+#btn-2:checked ~ .gallery .panel:nth-child(2),
+#btn-3:checked ~ .gallery .panel:nth-child(3) {
+    display: flex;
+}
+
+/**************/
+
+.panel figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+
+    width: 350px;
+    height: 350px;
+    background-color: rgb(215, 222, 255);
+    box-shadow: 0 0 4px 2px rgb(215, 222, 255);
+
+    transition: 1s;
+}
+
+.panel figure:hover {
+    background-color: rgb(180, 189, 224);
+    box-shadow: 0 0 4px 2px rgb(180, 189, 224);
+}
+
+.panel figure img {
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel figcaption {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 4px;
+    border: 3px solid rgb(88, 127, 186);
+    border-radius: 25px;
+}
+
+.panel figcaption p {
+    margin: 4px;
+}
+
+/**************/
+.large-picture {
+    display: none;
+
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(88, 127, 186, 0.8);
+}
+
+.large-picture.visible {
+    display: flex;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button.previous, .button.following {
+    width: 50px;
+    height: 50px;
+    margin: auto 10px auto;
+    border-radius: 50%;
+    background-color: rgb(215, 222, 255);
+    position: relative;
+
+    transition: 0.5s;
+}
+
+.button.previous:hover, .button.following:hover {
+    transform: scale(1.1);
+}
+
+.button.previous::before, .button.previous::after,
+.button.following::before, .button.following::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    transition: 1s;
+
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: rgb(36, 65, 109);
+}
+
+.button.previous::before {
+    transform-origin: 5px 5px;
+    transform: rotate(-45deg);
+}
+
+.button.previous::after {
+    transform-origin: 5px 5px;
+    transform: rotate(45deg);
+}
+
+.button.following::before {
+    transform-origin: 25px 5px;
+    transform: rotate(-45deg);
+}
+
+.button.following::after {
+    transform-origin: 25px 5px;
+    transform: rotate(45deg);
+}
+
+.button.lock {
+    cursor: default;
+}
+
+.button.previous.lock::before, .button.previous.lock::after,
+.button.following.lock::before, .button.following.lock::after {
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+}
+
+.button.close-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button.close-picture::before, .button.close-picture::after {
+    content:"";
+    display: block;
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 16px;
+    left: 5px;
+    background-color: firebrick;
+    transform-origin: 15px 4px;
+}
+
+.button.close-picture:hover {
+    transform: rotate(90deg);
+}
+
+.button.close-picture::before {
+    transform: rotate(45deg);
+}
+
+.button.close-picture::after {
+    transform: rotate(-45deg);
+}
+
+.close-picture-box {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.button.count-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(180, 189, 224);
+
+    cursor: default;
+    color: rgb(36, 65, 109);
+    font-weight: bold;
+
+    position: absolute;
+    top: -25px;
+    left: -25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.large-picture figure {
+    margin: auto 10px auto;
+    position: relative;
+    text-align: center;
+}
+
+.large-picture figure img {
+    height: 600px;
+    margin-bottom: -5px;
+}
+
+.large-picture figcaption {
+    width: fit-content;
+    padding: 5px;
+    margin: 0 auto 0;
+    background-color: rgb(215, 222, 255);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.large-picture figcaption p {
+    margin: 4px 10px 4px;
+}
