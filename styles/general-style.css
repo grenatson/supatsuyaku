@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    padding: 0 150px 0;
+    padding: 0 10vw 0;
     background-color: #a4c2fd;
 
     display: flex;
@@ -20,10 +20,12 @@ nav {
 }
 
 nav a {
-    display: block;
+    display: flex;
     padding: 25px;
-    margin-right: 0px;
+    margin: 0px;
     text-align: center;
+    align-items: center;
+
     font-weight: bold;
     text-decoration: none;
     color: rgb(27, 0, 68);
@@ -64,14 +66,14 @@ nav a:first-child img {
 }
 
 main {
-    margin: 25px 10% 25px;
-    padding: 25px;
+    margin: 4vh 10vw 4vh;
+    padding: 4vh;
     background-color: #a4c2fd;
 }
 
 footer {
     margin-top: auto;
-    padding: 10px;
+    padding: 2vh;
     text-align: center;
     background-color: #5880ba;
 }

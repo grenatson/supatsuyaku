@@ -78,14 +78,14 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding: 10px;
-    margin: 5px;
+    padding: 1vw;
+    margin: 0.5vw;
     cursor: pointer;
 
-    width: 350px;
-    height: 350px;
+    max-width: 30%;
+    height: 50vh;
     background-color: rgb(215, 222, 255);
-    box-shadow: 0 0 4px 2px rgb(215, 222, 255);
+    box-shadow: 0 0 2px 2px rgb(215, 222, 255);
 
     transition: 1s;
 }
@@ -96,21 +96,20 @@
 }
 
 .panel figure img {
-    height: 210px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 30vh;
+    margin: auto;
 }
 
 .panel figcaption {
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 4px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    padding: 0.25vw;
     border: 3px solid rgb(88, 127, 186);
-    border-radius: 25px;
+    border-radius: 2vw;
 }
 
 .panel figcaption p {
-    margin: 4px;
+    margin: 1%;
 }
 
 /**************/
@@ -265,7 +264,7 @@
 }
 
 .large-picture figure img {
-    height: 600px;
+    height: 75vh;
     margin-bottom: -5px;
 }
 

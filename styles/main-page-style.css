@@ -1,5 +1,5 @@
 .description {
-    padding: 10px;
+    padding: 2vw;
 }
 
 h2 {
@@ -15,11 +15,11 @@ h2 {
 }
 
 .description-with-me .text {
-    max-width: 900px;
+    max-width: 60vw;
 }
 
 .description-with-me img {
-    width: 150px;
+    width: 10vw;
     height: fit-content;
     margin: auto 20px;
     border: 5px solid rgba(215, 222, 255, 0.5);
@@ -34,12 +34,12 @@ h2 {
 }
 
 .description-with-logos p {
-    width: 500px;
+    width: 30vw;
     line-height: 120%;
 }
 
 .title, .logo {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 .title:hover, .title.highlighted {
@@ -50,13 +50,13 @@ h2 {
 }
 
 .grid-of-logos {
-    margin-right: 50px;
+    margin-right: 5vw;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5px;
-    width: 500px;
+    gap: 2vw;
+    width: 30vw;
 }
 
 .logo {
@@ -64,8 +64,8 @@ h2 {
     align-items: center;
     justify-content: center;
 
-    width: 160px;
-    padding: 10px;
+    width: 8vw;
+    padding: 1vw;
 }
 
 .logo:hover, .logo.highlighted {
@@ -74,11 +74,11 @@ h2 {
 }
 
 .logo img {
-    width: 140px;
+    width: 9vw;
 }
 
 .logo.nissan img {
-    width: 100px;
+    width: 7vw;
 }
 
 .partnership {
@@ -88,12 +88,12 @@ h2 {
 }
 
 .partnership h2 {
-    padding: 5px;
+    padding: 1vw;
 }
 
 .contacts {
-    margin-left: 10px;
+    margin-left: 1vw;
     border: 2px solid black;
-    padding: 10px;
+    padding: 1vw;
     font-size: larger;
 }
