@@ -1,2 +1,2 @@
 # supatsuyaku
-interpreter's site
+interpreter's site located at <https://supatsuyaku.ru/>
