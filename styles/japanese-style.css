@@ -15,11 +15,11 @@ section p {
 }
 
 .description-with-me .text {
-    max-width: 60vw;
+    max-width: 60vmax;
 }
 
 .description-with-me img {
-    width: 10vw;
+    width: 10vmax;
     height: fit-content;
     margin: auto 20px;
     border: 5px solid rgba(215, 222, 255, 0.5);
@@ -55,10 +55,10 @@ section p {
     align-items: center;
     justify-content: center;
 
-    width: 8vw;
-    padding: 1vw;
-    margin-right: 2vw;
-    margin-bottom: 1vw;
+    width: 8vmax;
+    padding: 1vmax;
+    margin-right: 2vmax;
+    margin-bottom: 1vmax;
 }
 
 .logo:hover, .logo.highlighted {
@@ -67,7 +67,7 @@ section p {
 }
 
 .logo img {
-    width: 9vw;
+    width: 9vmax;
 }
 
 .partnership {
@@ -80,12 +80,12 @@ section p {
 .partnership h2 {
     padding: 5px;
     text-align: left;
-    width: 40vw;
+    width: 40vmax;
 }
 
 .contacts {
-    margin-left: 1vw;
+    margin-left: 1vmax;
     border: 2px solid black;
-    padding: 1vw;
+    padding: 1vmax;
     font-size: larger;
 }

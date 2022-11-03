@@ -78,12 +78,12 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    padding: 1vw;
-    margin: 0.5vw;
+    padding: 1vmax;
+    margin: 0.5vmax;
     cursor: pointer;
 
     max-width: 30%;
-    height: 50vh;
+    height: 50vmin;
     background-color: rgb(215, 222, 255);
     box-shadow: 0 0 2px 2px rgb(215, 222, 255);
 
@@ -96,16 +96,16 @@
 }
 
 .panel figure img {
-    height: 30vh;
+    height: 30vmin;
     margin: auto;
 }
 
 .panel figcaption {
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-    padding: 0.25vw;
+    margin-left: 0.5vmax;
+    margin-right: 0.5vmax;
+    padding: 0.25vmax;
     border: 3px solid rgb(88, 127, 186);
-    border-radius: 2vw;
+    border-radius: 2vmax;
 }
 
 .panel figcaption p {
@@ -264,7 +264,7 @@
 }
 
 .large-picture figure img {
-    height: 75vh;
+    height: 75vmin;
     margin-bottom: -5px;
 }
 
